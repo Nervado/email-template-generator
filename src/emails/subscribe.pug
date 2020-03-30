@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    block head
+      meta(charset="utf-8")
+      meta(name="viewport" content="width=device-width")
+      meta(http-equiv="X-UA-Compatible" content="IE=edge")
+      meta(name="x-apple-disable-message-reformatting")
+
+      style       
+        include ../sass/global.scss
+        include ../sass/components/header.scss
+        include ../sass/components/footer.scss
+        include ../sass/subscribe/subscribe.scss
+
+  body
+    br
+    table.table(cellpadding="0" cellspacing="0")
+      tr
+        td
+          include ../components/header.pug
+      tr
+        td  
+          p(class='gret') Ola, 
+            p(class='admin') #{admin}
+      tr
+        td
+          p Um novo cliente acaba de se cadastrar em nossa plataforma.  
+      tr  
+        td
+          <p> O cliente 
+            <strong>#{name}</strong> recebeu um link para confirmação de cadastro no endereço 
+            <strong>#{email}</strong>. 
+          </p>
+          br
+      tr
+        td
+          p Se necessário entre em contato com o cliente pelo número 
+            p(class='enfase') #{phonenumber}   
+      tr 
+        td
+          p 
+            button 
+              a(href="https://reformadossonhos.com.br/dashboard") C&amp;V Reformas e Construções  
+      include ../components/footer.pug    
+
+

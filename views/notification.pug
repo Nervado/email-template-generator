@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Test | Email template!
+    link(rel="stylesheet" href="./styles/global.css")
+    link(rel="stylesheet" href="./styles/notification/notification.css")
+    link(rel="stylesheet" href="./styles/components/footer.css")
+    link(rel="stylesheet" href="./styles/components/header.css")
+  body
+    include ./components/header.pug
+    table.table(cellpadding="0" cellspacing="0")
+      tr
+        td.red
+          h3(style="color: white;") Gulp &amp; Pug is awesome #{name}
+
+    include ./components/footer.pug

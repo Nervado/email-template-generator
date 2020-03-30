@@ -1,0 +1,18 @@
+//- index.pug
+doctype html
+- var url = 'https://www.reformadossonhos.com.br'
+html
+
+  body
+    include ./components/header.pug
+    h1 My Site
+    p  Welcome to my super lame site do #{name}.
+    h1 fas fa-dollar-sign
+    i(class='fas fa-dollar-sign' style='font-size:48px;color:red')
+    br
+    button(class='button-signup') 
+      a(class='url' href=url) Confirmar
+    include ./components/footer.pug
+
+
+

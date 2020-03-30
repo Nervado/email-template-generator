@@ -1,0 +1,29 @@
+
+
+doctype html
+html
+  head
+    title Test | Email template!
+    //- import css/scss stylesheets
+    //- these file names will be replace by gulp with proper css file paths
+
+    style
+      include ./styles/global.css
+      include ./styles/components/header.css
+      include ./styles/components/footer.css
+      include ./styles/subscribe/subscribe.css
+
+  body
+    table.table(cellpadding="0" cellspacing="0")
+      tr
+        td
+          h1(class="header") Templates disponíveis
+      tr
+        td
+          a(href="/subscribe.html") Subscribe email template
+      tr
+        td
+          a(href="/notification.html") Notification email template
+
+
+
