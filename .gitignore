@@ -5,7 +5,6 @@
 
 
 # ignore images
-
 *.jpg
 !.gitignore
 
