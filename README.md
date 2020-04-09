@@ -1,9 +1,10 @@
 # email-template-generator
 
 this project is a small setup test to make pug templates
-## its small email template generator!
 
-we use gulp to make a dist folder and a simple browsersync to show email templates
+## its simple small email template generator!
+
+we use gulp, browsersync and sass to build templates
 
 to run this project you must:
 
